@@ -12,12 +12,6 @@ This application calculates the growth of an investment over time with and witho
 6. View the calculated balances and interests with and without additional monthly deposits.
 7. Optionally, test different values by following the prompts.
 
-## Compilation
-To compile the program, use the following command:
-```sh
-g++ -o InvestmentCalculator main.cpp InvestmentCalculator.cpp
-
-
 ## Project Summary
 This project involved creating an investment calculator for Airgead Banking, a fictional company that seeks to teach high school students about fiscal responsibility through an interactive system. The program calculates how investments grow over time, both with and without additional monthly deposits, considering the effects of compound interest. The primary problem it solves is demonstrating the power of compound interest and the benefits of consistent investment over time.
 
@@ -56,6 +50,8 @@ To ensure the program is maintainable, readable, and adaptable, I:
 - **Provided Inline Comments:** Important sections of the code are explained with comments, making it easier for others (or myself) to understand the code in the future.
 - **Separated Concerns:** The program logic is divided into different functions and classes, making it easier to modify or extend specific parts of the code without affecting the entire program.
 - **Implemented Error Handling:** The code includes basic error handling to manage unexpected inputs and prevent crashes, contributing to its robustness and reliability.
+
+
 
 ## How to Run the Program
 To compile and run the program, use the following commands:
