@@ -1,0 +1,49 @@
+Airgead Banking App Pseudocode
+Author: Morgun Leonard
+
+1. Display Input Screen
+   - Display "************ Data Input ************"
+   - Display "Initial Investment Amount:"
+   - Display "Monthly Deposit:"
+   - Display "Annual Interest (Compounded):"
+   - Display "Number of Years:"
+   - Display "Press any key to continue . . ."
+
+2. Get User Input
+   - Get initial_investment from user input
+   - Get monthly_deposit from user input
+   - Get annual_interest_rate from user input
+   - Get number_of_years from user input
+
+3. Calculate Investment Growth Without Monthly Deposits
+   - Initialize balance_without_deposits to initial_investment
+   - For year from 1 to number_of_years:
+       - Calculate year_end_interest = balance_without_deposits * (annual_interest_rate / 100)
+       - Update balance_without_deposits = balance_without_deposits + year_end_interest
+       - Store year, balance_without_deposits, and year_end_interest for display
+
+4. Calculate Investment Growth With Monthly Deposits
+   - Initialize balance_with_deposits to initial_investment
+   - For year from 1 to number_of_years:
+       - Initialize year_end_interest to 0
+       - For month from 1 to 12:
+           - Calculate monthly_interest = (balance_with_deposits + monthly_deposit) * (annual_interest_rate / 100 / 12)
+           - Update balance_with_deposits = balance_with_deposits + monthly_deposit + monthly_interest
+           - Update year_end_interest = year_end_interest + monthly_interest
+       - Store year, balance_with_deposits, and year_end_interest for display
+
+5. Display Results
+   - Display "Balance and Interest Without Additional Monthly Deposits"
+   - For each stored year, balance_without_deposits, year_end_interest:
+       - Display year, balance_without_deposits, year_end_interest
+
+   - Display "Balance and Interest With Additional Monthly Deposits"
+   - For each stored year, balance_with_deposits, year_end_interest:
+       - Display year, balance_with_deposits, year_end_interest
+
+6. Allow User to Test Different Values
+   - Display "Would you like to test different values? (y/n)"
+   - If user input is 'y':
+       - Go to Step 1
+   - If user input is 'n':
+       - Exit the program
